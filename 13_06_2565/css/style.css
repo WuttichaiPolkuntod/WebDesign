@@ -85,3 +85,6 @@ li A{
     text-decoration: none;
     color: blanchedalmond;
 }
+table, th, td {
+    border:1px solid black;
+  }
