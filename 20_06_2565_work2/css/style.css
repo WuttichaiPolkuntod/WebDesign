@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    margin: 20px auto;
+    width: 80%;
+}
+#head{
+    text-align: left;
+}
+input[type=text]{
+    width: 100%;
+}
+td,th{
+    text-align: center;
+}
