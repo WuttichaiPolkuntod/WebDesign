@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 25%;
+    margin: 0px auto;
+    background: gray;
+    text-align: center;
+}
+table{
+    border: 1px black solid;
+    margin-top: 50px;
+    width: 100%;
+    background:skyblue;
+    border-collapse:collapse ;
+}
+th{
+    padding: 8px;
+    background: blue;
+    color: white;
+}
+td{
+    padding: 8px;
+}
+input[type=text],input[type=password]{
+    padding: 5px;
+    width: 80%;
+    border: 1px solid snow;
+    border-radius: 5px;
+}
+input[type=submit]:hover{
+    border-radius: 25px;
+    padding: 8px;
+    width: 50%;
+    border: none;
+    background:rgb(85, 107, 198);
+}
+input[type=submit]{
+    border-radius: 25px;
+    padding: 8px;
+    width: 50%;
+    border: none;
+    background:rgb(93, 114, 199);
+}
