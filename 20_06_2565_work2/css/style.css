@@ -2,19 +2,26 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    width: 80%;
+    margin: 15px auto;
+}
 table{
-    margin: 20px auto;
-    width: 95%;
-}
-#head{
-    text-align: left;
-}
-input[type=text]{
+    margin-top: 50px;
     width: 100%;
+}
+#cen{
+    text-align: center;
+}
+input[type=text],input[type=password]{
+    margin: 1px 1px 1px 1px;
     padding: 8px;
-    border-radius: 5px;
-    background: wheat;
+    border-radius: 3px;
+    border: none;
+    background-color: bisque;
+    color: rgb(126, 33, 33);
+    width: 80%;
 }
 td,th{
-    text-align: center;
+    padding: 3px;
 }
