@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background: black;
+    height: 60px;
+
+}
+ul{
+
+}
+li{
+    float: left;
+    list-style: none;
+    color: wheat;
+    margin: 20px;
+}
+#first{
+    margin-left: 40px;
+}
+#back{
+    float: right;
+    list-style: none;
+}
