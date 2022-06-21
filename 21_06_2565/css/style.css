@@ -23,3 +23,11 @@ li{
     float: right;
     list-style: none;
 }
+li a{
+    text-decoration: none;
+    color: wheat;
+}
+li a:hover{
+    text-decoration: none;
+    color: rgb(158, 143, 116);
+}
