@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.item1{
+    background:rgba(27,188,155,255);
+    height: 200px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+.item2{
+    background:rgba(51,51,51,255);
+    height: 50px;
+    display: flex;
+}
+.item2 a{
+    color: #fff;
+    padding: 14px 50px;
+    text-decoration: none;
+    text-align: center;
+}
+.item2 a:hover{
+    background: #ccc;
+    color: #000;
+}
+.item3{
+    flex: 30%;
+    background: #f1f1f1;
+    padding: 20px;
+}
+.fakeimg{
+    background: #aaa;
+    width: 100%;
+    padding:2px;
+}
+.item4{
+    padding: 20px;
+}
+.item5{
+    padding: 20px;
+    background: #ddd;
+    text-align: center;
+}
