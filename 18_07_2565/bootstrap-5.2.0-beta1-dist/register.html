@@ -4,61 +4,329 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register.html</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
-    <div class="container-fluid" style="margin: 0; padding: 0;">
+    <div class="container">
         <div class="row">
-          <div class="col-4 p-3     ">
-            <div class="row">
-                <div class="col-2">
-                    <img src="img/สำนักงานคณะกรรมการการอาชีวศึกษา.png" width="100">
-                </div>
-                <div class="col-10">
-                    <br>
-                    <b>สำนักงานคณะกรรมการการอาชีวศึกษา</b><br>
-                    <b>Office of Vocational Education Commission</b> 
+            <div class="col-4 p-3">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/สำนักงานคณะกรรมการการอาชีวศึกษา.png" width="50">
+                    </div>
+                    <div class="col-10">
+                        <b class="link-danger">สํานักงานคณะกรรมการการอาชีวศึกษา</b>
+                        <br>
+                        <b>Office of Vocational Education Commision</b>
+                    </div>
                 </div>
             </div>
-          </div>
-          <div class="col-8">
-            <div class="fs-2 text-end"> ระบบสมัครนักเรียน นักศึกษา</div>
-            <div class="text-end small-text">STUDENT ADMISSION SYSTEM</div>
-            <nav class="navbar navbar-expand-lg bg-light float-end">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">สมัครเรียน (ปีการศึกษา2559/1)</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">หลักสูตรที่เปิดรับสมัคร</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">ตรวจสอบผลการเรียน</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">ติดต่อ-สอบถาม</a>
-                            </li>
-                        </ul>
-                      </div>
-                </div>
-              </nav>
-          </div>
+            <div class="col-8">
+                <div class="fs-2 text-end">ระบบรับสมัครนักเรียน นักศึกษา</div>
+                <div class="text-end small-text">STUDENT ADMISSION SYSTEM</div>
+                <nav class="navbar navbar-expand-lg float-end">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">หน้าแรก</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">สมัครเรียน</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">หลักสูตรที่เปิดรับสมัคร</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ตรวจสอบผลการสมัคร</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ติดต่อ-สอบถาม</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-        <hr>
-        <div class="fs-2 text-start"style="margin-left: 25px;">สมัครเรียน (ปีการศึกษา2559/1)ระดับ ปวช.(ปกติ)</div>
-        <div class="fs-4 text-start"style="margin-left: 25px;">ข้อมูลผู้สมัคร</div>
-        <div class="mb-3 row"style="margin-left: 25px;">
-            <label for="staticEmail" class="col-sm-2 col-form-label">รหัสประจำตัวประชาชน</label>
-            <div class="col-sm-10">
-                <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="width: 150px;">
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <p>
+            <b class="text-primary fs-3 text-success">สมัครเรียน (ปีการศึกษา 1/2559) </b><b class="text-primary fs-3">      ระดับ ปวช. (ปกติ)</b><br>
+            <b class="btn btn-dark text-white fs-4">กรอกข้อมูลผู้สมัครเข้าเรียน</b><br>
+            <b class="fs-4 ">ข้อมูลผู้สมัคร<span class="text-danger fs-4">(** ระบุ รหัสประจำตัวประชาชน และ วัน /เดือน /ปี เกิด เพื่อตรวจสอบข้อมูล)</span></b>
+        </p>
+        <form class="w-50">
+            <div class="row mb-3">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;รหัสประจำตัวประชาชน :</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" value="1234567891234" disabled>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;วัน/เดือน/ปีเกิด :</label>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col">
+                            <input type="number" class="form-control" min="1" max="31">
+                        </div>
+                        <div class="col">
+                            <select class="form-select" id="" name="">
+                                <option value="1">กุมภาพันธ์</option>
+                                <option value="2">มีนาคม</option>
+                                <option value="3">เมษายน</option>
+                                <option value="4">พฤษภาคม</option>
+                                <option value="5">มิถุนายน</option>
+                                <option value="6">กรกฎาคม</option>
+                                <option value="7">สิงหาคม</option>
+                                <option value="8">กันยายน</option>
+                                <option value="9">ตุลาคม</option>
+                                <option value="10">พฤศจิกายน</option>
+                                <option value="11">ธันวาคม</option>
+                              </select>
+                        </div>
+                        <div class="col">
+                            <input type="number" min="2536" max="2550" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-auto">
+                            <input type="submit" class="btn btn-primary" value="ตรวจสอบ">
+                        </div>
+                        <div class="col-auto">
+                            <input type="reset" class="btn btn-warning" value="เริ่มใหม่">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <b class="text-primary fs-4 text-success">ข้อมูลส่วนตัวผู้สมัคร</b>
+            </p>
+            
+            <div class="row">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;ชื่อ-นามสกุล ผู้สมัคร :</label>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col">
+                            <select class="form-select" id="" name="" >
+                                <option selected>นาย</option>
+                                <option value="1">นาง</option>
+                                <option value="2">น.ส</option>
+                              </select>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;เพศ :</label>
+                &nbsp;&nbsp;&nbsp;
+                <select class="form-select" id="" name=""  style="width: 20%;">
+                    <option value="1">หญิง</option>
+                    <option value="2">ชาย</option>
+                  </select>
+            </div>
+            <div class="row">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;สัญชาติ :</label>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col">
+                            <select class="form-select" id="" name="">
+                                <option value="1">ไทย</option>
+                                <option value="2">ต่างชาติ</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="col-md-5"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ศาสนา</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" id="" name="">
+                                <option value="1">พุทธ</option>
+                                <option value="2">อื่นๆ</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;ชื่อ-นามสกุล ผู้สมัคร :</label>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col">
+                            <select class="form-select" id="" name="" >
+                                <option selected>ไม่ระบุ</option>
+                                <option value="1">วิชาการ</option>
+                                <option value="2">กีฬา</option>
+                              </select>
+                        </div>
+                        <div class="col">
+                            <label class="col"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ความพิการ :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" id="" name="">
+                                <option value="1">ไม่พิการ</option>
+                                <option value="2">พิการ</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <b class="text-primary fs-4 text-success">ข้อมูลที่อยู่ตามทะเบียนบ้าน</b>
+            </p>
+            <div class="row">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;บ้านเลขที่</label>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="col">
+                            <label class="col"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;&nbsp;หมู่ :</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label class="col"><span class="text-danger">&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;&nbsp;ถนน :</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;จังหวัด :</label>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-3">
+                            <select class="form-select" id="" name="">
+                                <option value="1">ชลบุรี</option>
+                                <option value="2">ระยอง</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โทรศัพท์บ้าน :</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;อำเภอ :</label>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-4">
+                            <select class="form-select" id="" name="">
+                                <option value="1">ห้วยใหญ่</option>
+                                <option value="2">บ้านฉาง</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label><span class="text-danger">&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;โทรศัพท์มือถือ :</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-md-4"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;ตำบล :</label>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-4">
+                            <select class="form-select" id="" name="">
+                                <option value="1">บ้านบึง</option>
+                                <option value="2">พลา</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label><span class="text-danger">&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;Email :</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-md-5"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;รหัสไปรษณีย์ :</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <p>
+                <b class="text-primary fs-4 text-success">ข้อมูลคุณวุฒิการศึกษาที่ใช้สมัคร</b>
+            </p>
+            <div class="row">
+                <div class="row mb-3">
+                    <label class="col-md-5"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;สมัครโดยใช้คุณวุฒิ :</label>
+                    <div class="col-md-3">
+                        <select class="form-select" id="" name="">
+                            <option value="1">ม.3</option>
+                            <option value="2">ม.6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-md-5"><span class="text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span>&nbsp;&nbsp;&nbsp;จากสถานศึกษา :</label>
+                    <div class="col-md-7">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-md-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เกรดเฉลี่ยสะสม GPA :</label>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-5">
+                        <span class="text-danger">ระบุค่าระหว่าง 1.00-4.00</span>&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-md-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปีที่จบ </label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="submit" class="btn btn-success  text-white" value="ยืนยันข้อมูล">
+                    </div>
+                    <div class="col-6">
+                        <input type="reset" class="btn btn-secondary text-end" value="เริ่มใหม่">
+                    </div>
+                    
+                </div>
+                <div class="row mb-4">
+                    <div class="col-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="text-danger">(** กรุณาตรวจสอบข้อมูลของท่านให้เรียบร้อยก่อนทำการยืนยันข้อมูล)</span>
+                    </div>
+                    
+                </div> 
+            </div>
+            
+        </form>
     </div>
 </body>
 </html>
